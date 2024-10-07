@@ -8,7 +8,7 @@ namespace ConsoleApplication1
         {
             if (nb >= 6 && nb <= 874)
             {
-                for (int i = 0; i < nb; i++)
+                for (int i = 6; i < nb; i++)
                 {
                     if (i % 3 == 0 || i % 4 == 0)
                     {
@@ -22,6 +22,7 @@ namespace ConsoleApplication1
                     {
                         Console.Write("CA");
                     }
+                    Console.WriteLine();
                 }
             }
         }
