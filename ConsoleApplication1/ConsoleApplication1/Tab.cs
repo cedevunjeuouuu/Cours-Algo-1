@@ -8,12 +8,11 @@ namespace ConsoleApplication1
         {
             int[] tableau = new int[n];
             int cpt = 0;
-            foreach (var i in tableau)
+            for (int i = tableau.Length; i > 0; i -= 2)
             {
-                tableau[cpt] = n;
-                Console.Write(n + ",");
-                n -= 1;
-                cpt += 1;
+                tableau[cpt] = i;
+                Console.Write(i+",");
+                cpt -= cpt;
             }
         }
     }
