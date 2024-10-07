@@ -6,10 +6,12 @@ namespace ConsoleApplication1
     {
         public static void Main(string[] args)
         {
-            algo1 algo = new algo1(); 
-            Console.Write("Ecrivez un nombre entre 6 et 874 : ");
+            Tab tableau = new Tab();
+            
+            Console.Write("Ecrivez un nombre : ");
             int value = int.Parse(Console.ReadLine());
-            algo.Solve(value);
+            tableau.CreerTab(value);
+           
         }
     }
 }
